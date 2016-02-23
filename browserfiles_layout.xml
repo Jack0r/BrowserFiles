@@ -1,5 +1,5 @@
 <!DOCTYPE StreamControlLayout>
-<layout width="400" height="500" tabbed="0">
+<layout width="400" height="540" tabbed="0">
   <lineEdit id="pName1" x="10" y="10" width="160" height="20" dataSet="players.csv" >Player 1</lineEdit>
   <lineEdit id="pCountry1" x="180" y="10" width="50" height="20" dataSet="players.csv" dataField="2" master="pName1" >Country</lineEdit>
   <lineEdit id="pName2" x="10" y="40" width="160" height="20" dataSet="players.csv" >Player 2</lineEdit>
@@ -12,24 +12,27 @@
   <button type="swap" x="330" y="40" width="40" height="23" tooltip="Swap the Scores" id="swap" swapSet1="pName1,pScore1,pCountry1" swapSet2="pName2,pScore2,pCountry2">Swap</button>
   <label x="10" y="74" width="46" height="13">Contest</label>
   <label x="10" y="104" width="46" height="13">Round</label>
-  <lineEdit id="mText3" x="60" y="70" width="321" height="20" />
-  <lineEdit id="mText4" x="60" y="100" width="321" height="20" />
-  <label x="10" y="134" width="46" height="13">Text</label>
-  <lineEdit id="cTitle1" x="60" y="130" width="321" height="20" />
-  <label x="10" y="164" width="46" height="13">Link</label>
-  <lineEdit id="cTitle2" x="60" y="160" width="321" height="20" />
-  <label x="10" y="194" width="77" height="13">Lower Third L1</label>
-  <label x="10" y="224" width="77" height="13">Lower Third L2</label>
-  <lineEdit id="mText1" x="82" y="190" width="299" height="20" />
-  <lineEdit id="mText2" x="82" y="220" width="299" height="20" />
-  <label x="10" y="254" width="77" height="13">Lower Third</label>
-  <lineEdit id="mText5" x="82" y="250" width="299" height="20" />
-  <label x="10" y="284" width="77" height="13">Slide L Title</label>
-  <lineEdit id="mText6" x="82" y="280" width="299" height="20" />
-  <label x="10" y="314" width="77" height="13">Slide L Text</label>
-  <lineEdit id="mText6b" x="82" y="310" width="299" height="20" />
-  <label x="10" y="344" width="77" height="13">Slide R Title</label>
-  <lineEdit id="mText7" x="82" y="340" width="299" height="20" />
-  <label x="10" y="374" width="77" height="13">Slide R Text</label>
-  <lineEdit id="mText7b" x="82" y="370" width="299" height="20" />
+  <lineEdit id="mText3" x="60" y="70" width="300" height="20" />
+  <lineEdit id="mText4" x="60" y="100" width="300" height="20" />
+  <label x="10" y="134" width="75" height="13">Commentator</label>
+  <label x="10" y="164" width="46" height="13">Text</label>
+  <lineEdit id="cTitle1" x="60" y="160" width="321" height="20" />
+  <label x="10" y="194" width="46" height="13">Title</label>
+  <lineEdit id="cTitle2" x="60" y="190" width="321" height="20" />
+  <label x="10" y="224" width="77" height="13">Lower Third's</label>
+  <label x="10" y="254" width="77" height="13">Lower Third L1</label>
+  <label x="10" y="284" width="77" height="13">Lower Third L2</label>
+  <label x="10" y="314" width="77" height="13">Lower Third 1L</label>
+  <lineEdit id="mText1" x="82" y="250" width="299" height="20" />
+  <lineEdit id="mText2" x="82" y="280" width="299" height="20" />
+  <lineEdit id="mText5" x="82" y="310" width="299" height="20" />
+  <label x="10" y="344" width="77" height="13">Slide L / R</label>
+  <label x="10" y="374" width="77" height="13">Slide L Title</label>
+  <lineEdit id="mText6" x="82" y="370" width="299" height="20" />
+  <label x="10" y="404" width="77" height="13">Slide L Text</label>
+  <lineEdit id="mText6b" x="82" y="400" width="299" height="20" />
+  <label x="10" y="434" width="77" height="13">Slide R Title</label>
+  <lineEdit id="mText7" x="82" y="430" width="299" height="20" />
+  <label x="10" y="464" width="77" height="13">Slide R Text</label>
+  <lineEdit id="mText7b" x="82" y="460" width="299" height="20" />
 </layout>
