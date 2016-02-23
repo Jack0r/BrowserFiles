@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'SansationRegular';
+    src: url('Sansation_Regular-webfont.eot');
+    src: url('Sansation_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sansation_Regular-webfont.woff') format('woff'),
+         url('Sansation_Regular-webfont.ttf') format('truetype'),
+         url('Sansation_Regular-webfont.svg#SansationRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SansationBold';
+    src: url('Sansation_Bold-webfont.eot');
+    src: url('Sansation_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Sansation_Bold-webfont.woff') format('woff'),
+         url('Sansation_Bold-webfont.ttf') format('truetype'),
+         url('Sansation_Bold-webfont.svg#SansationBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	margin:0px;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: 'SansationRegular';
+	color:#FFFFFF;
+}
+
+#board {
+	position:absolute;
+	top:0px;
+	left:-1920px;
+	width:1920px;
+	height:1080px;
+	background-image:url(../images/lt1l.png);
+}
+
+#mText5 {
+	color: #FFF;
+	overflow:hidden;
+	position:absolute;
+	left:210px;
+	top:910px;
+	height:140px;
+	width:1500px;
+	font-size:55px;
+	font-family: 'SansationBold';
+	text-align:center;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+}

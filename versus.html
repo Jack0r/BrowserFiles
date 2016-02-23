@@ -1,0 +1,74 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/stylesheet_versus.css" type="text/css" charset="utf-8">
+	<script src="js/jquery-2.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jstween-1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/countries.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function init() {
+				$('#board1').tween({
+				   left:{
+					  start: '-320',
+					  stop: '420',
+					  units: 'px',
+					  time: 0,
+					  duration: 2,
+					  effect:'easeOut'
+				   }
+				});
+				$('#board2').tween({
+				   left:{
+					  start: '1920',
+					  stop: '1180',
+					  units: 'px',
+					  time: 0,
+					  duration: 2,
+					  effect:'easeOut'
+				   }
+				});
+				$('#vs').tween({
+					top:{
+					  start: '-1080',
+					  stop: '0',
+					  units: 'px',
+					  time: 0,
+					  duration: 2,
+					  effect:'easeOut'
+				   },
+				   opacity:{
+					  start: '0',
+					  stop: '100',
+					  time: 0,
+					  duration: 2,
+					  effect:'easeOut'
+				   }
+				});
+				$('#board').tween({
+				   top:{
+					  start: '0',
+					  stop: '1080',
+					  units: 'px',
+					  time: 7,
+					  duration: 2,
+					  effect:'easeOut'
+				   },
+				   opacity:{
+					  start: '100',
+					  stop: '0',
+					  time: 7,
+					  duration: 2,
+					  effect:'easeOut'
+				   }
+				});
+				$.play();
+		}
+</script>
+</head>
+<body onLoad="init()">
+	<div id="board">
+    <div id="vs"></div>
+    <div id="board1"></div>
+    <div id="board2"></div>
+    </div>
+</body>
+</html>

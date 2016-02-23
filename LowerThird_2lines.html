@@ -1,0 +1,201 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/stylesheet_lt2l.css" type="text/css" charset="utf-8">
+	<script src="js/jquery-2.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jstween-1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/countries.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+			
+			var timestampOld;
+			var timestamp;
+			var mText1;
+			var mText2;
+			
+			var xmlDoc;
+		
+			var xhr = new XMLHttpRequest();
+		
+			var animating = false;
+			var doUpdate = false;
+			
+			function init() {
+
+				xhr.overrideMimeType('text/xml');
+				
+				var timeout = this.window.setInterval(function() {
+					pollHandler();
+				}, 250);
+				movein();
+			}
+			
+			function pollHandler()
+			{
+			  loadData();
+			  if (timestamp != timestampOld) {
+				  doUpdate = true;
+			  }
+			  if (!animating && doUpdate) {
+				  
+				  updateBoard();
+
+			  }
+			}
+			
+			function movein(){
+				$('#board').tween({
+				   left:{
+					  start: '-1920',
+					  stop: '0',
+					  units: 'px',
+					  time: 0,
+					  duration: 2,
+					  effect:'easeOut'
+				   },
+				   top:{
+					  start: '0',
+					  stop: '500',
+					  units: 'px',
+					  time: 6,
+					  duration: 1,
+					  effect:'easeOut'	   
+   					}
+				});
+				
+				$.play(); 
+			}
+
+			function moveout(){
+				$('#board').tween({
+				   left:{
+					  start: '0',
+					  stop: '-1920',
+					  units: 'px',
+					  time: 0,
+					  duration: 0.1,
+					  effect:'easeOut'
+				   },
+				   top:{
+					  start: '500',
+					  stop: '0',
+					  units: 'px',
+					  time: 0.2,
+					  duration: 0.1,
+					  effect:'easeOut'	   
+   					}
+				});
+				
+				$.play(); 
+			}
+			
+
+			function loadData() {
+				xhr.open('GET', 'streamcontrol.xml');
+				xhr.send();
+				xhr.onreadystatechange = function(){
+						xmlDoc = xhr.responseXML;
+						
+						mText1 = getValueFromTag(xmlDoc,'mText1');
+						mText2 = getValueFromTag(xmlDoc,'mText2');						
+						timestampOld = timestamp;
+						timestamp = getValueFromTag(xmlDoc,'timestamp');
+						
+				}
+			}
+			
+			function updateBoard() {
+				if ($('#mText1').html() != mText1) {
+					animating = true;
+					$('#mText1').tween({
+						opacity: {
+						  start: 100,
+						  stop: 0,
+						  time: 0,
+						  duration: 0.5,
+						  effect: 'easeIn'
+						},
+						onStop: function(){
+							$('#mText1').html(mText1);
+						}
+					});
+					
+					$('#mText1').tween({
+						opacity: {
+						  start: 0,
+						  stop: 100,
+						  time: 0.5,
+						  duration: 0.5,
+						  effect: 'easeOut'
+						},
+						onStop: function(){
+							animating = false;
+						}
+					});
+				}
+				
+				if ($('#mText2').html() != mText2) {
+					animating = true;
+					$('#mText2').tween({
+						opacity: {
+						  start: 100,
+						  stop: 0,
+						  time: 0,
+						  duration: 0.5,
+						  effect: 'easeIn'
+						},
+						onStop: function(){
+							$('#mText2').html(mText2);
+						}
+					});
+					
+					$('#mText2').tween({
+						opacity: {
+						  start: 0,
+						  stop: 100,
+						  time: 0.5,
+						  duration: 0.5,
+						  effect: 'easeOut'
+						},
+						onStop: function(){
+							animating = false;
+						}
+					});
+				}
+				
+				$.play();
+				
+				doUpdate = false;
+			}
+			
+			function getValueFromTag (xmlDoc,tag) {
+				if (xmlDoc.getElementsByTagName(tag).length != 0 ) {
+					if (xmlDoc.getElementsByTagName(tag)[0].childNodes.length == 0) {
+							return '';
+						} else {
+							return xmlDoc.getElementsByTagName(tag)[0].childNodes[0].nodeValue;
+					}
+				} else {
+					return '';
+				}
+			}
+			
+			function getCountry (country) {
+			
+			var count = iso.findCountryByName(country);
+			if (!count)
+			count = iso.findCountryByCode(country);
+			if (!count) {
+			var count = new Array();
+			count['value'] = "unknown";
+			}
+			
+			return count['value'];
+		}
+	</script>
+</head>
+<body onLoad="init()">
+	<div id="board">
+		<div id="mText1"></div>
+		<div id="mText2"></div>
+	</div>
+</body>
+</html>
