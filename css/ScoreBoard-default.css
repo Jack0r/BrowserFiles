@@ -22,6 +22,10 @@
 
 }
 
+html { 
+    overflow: hidden; 
+}
+
 body {
 	margin:0px;
 	background-color: rgba(0, 0, 0, 0);
@@ -31,83 +35,74 @@ body {
 
 #board {
 	position:absolute;
-	top:-200px;
+	top:0px;
 	left:0px;
-	width:500px;
-	height:134px;
-	background-image:url('../images/scoreboard.png');
-}
-
-#mText3 {
-	color: #000;
-	position: absolute;
-	left: 10px;
-	top: 17px;
-	width: 235px;
-	font-size: 30px;
-	font-family: 'SansationBold';
-	text-align: left;
-}
-#mText4 {
-	color: #000;
-	position: absolute;
-	left: 430px;
-	top: 29px;
-	width: 47px;
-	font-size: 11px;
-	font-family: 'SansationBold';
-	text-align: center;
-	height: 23px;
+	width:1280px;
+	height:100px;
+	background-image:url('../images/game.png');
 }
 
 #pName1 {
-	color: #000;
-	position: absolute;
-	left: 70px;
-	top: 61px;
-	width: 350px;
-	font-size: 20px;
-	text-align: left;
+	position:absolute;
+	left:175px;
+	top:3px;
+	width:330px;
+	font-size:20px;
+}
+#pName2 {
+	position:absolute;
+	left:775px;
+	top:3px;
+	width:330px;
+	font-size:20px;
+	text-align:right;
+}
+#pScore1 {
+	position:absolute;
+	left:511px;
+	top:3px;
+	width:47px;
+	font-size:20px;
+	text-align:center;
+}
+#pScore2 {
+	position:absolute;
+	left:722px;
+	top:3px;
+	width:47px;
+	font-size:20px;
+	text-align:center;
 }
 
 #pFlag1 {
-	position: absolute;
-	left: 10px;
-	top: 59px;
-}
-
-#pScore1 {
-	color: #000;
-	position: absolute;
-	left: 430px;
-	top: 61px;
-	width: 47px;
-	font-size: 20px;
-	text-align: center;
+	position:absolute;
+	left:126px;
+	top:0px;
 }
 
 #pFlag2 {
-	position: absolute;
-	left: 10px;
-	top: 95px;
+	position:absolute;
+	left:1112px;
+	top:0px;
 }
 
-#pName2 {
-	color: #000;
-	position: absolute;
-	left: 70px;
-	top: 98px;
-	width: 350px;
-	font-size: 20px;
-	text-align: left;
+#mText3 {
+	color: #333333;
+	position:absolute;
+	left:560px;
+	top:1px;
+	width:160px;
+	font-size:11px;
+	font-family: 'SansationBold';
+	text-align:center;
 }
-
-#pScore2 {
-	color: #000;
-	position: absolute;
-	left: 430px;
-	top: 98px;
-	width: 47px;
-	font-size: 20px;
-	text-align: center;
+#mText4 {
+	color: #FFFFFF;
+	position:absolute;
+	left:560px;
+	top:23px;
+	width:160px;
+	font-size:11px;
+	font-family: 'SansationBold';
+	text-align:center;
 }

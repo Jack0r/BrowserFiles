@@ -1,0 +1,44 @@
+html { 
+    overflow: hidden; 
+}
+
+body {
+	margin:0px;
+	background-color: rgba(0, 0, 0, 0);
+	color:#FFFFFF;
+}
+
+#board {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:1920px;
+	height:1080px;
+}
+
+#vs {
+	position:absolute;
+	top:-1080px;
+	left:0px;
+	width:1920px;
+	height:1080px;
+	background-image:url(../images/teams/background.png);
+}
+
+#board1 {
+	position:absolute;
+	top:380px;
+	left:-320px;
+	width:320px;
+	height:320px;
+	background-image:url(../images/teams/Team_Left.png);
+}
+
+#board2 {
+	position:absolute;
+	top:380px;
+	left:1920px;
+	width:320px;
+	height:320px;
+	background-image:url(../images/teams/Team_Right.png);
+}

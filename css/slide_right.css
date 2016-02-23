@@ -22,6 +22,10 @@
 
 }
 
+html { 
+    overflow: hidden; 
+}
+
 body {
 	margin:0px;
 	background-color: rgba(0, 0, 0, 0);
@@ -32,26 +36,34 @@ body {
 #board {
 	position:absolute;
 	top:0px;
-	left:-1920px;
-	width:1920px;
-	height:1080px;
-	background-image:url(../images/lt1l.png);
+	left:500px;
+	width:500px;
+	height:500px;
+	background-image:url(../images/slide.png);
 }
 
-#mText5 {
-	color: #FFF;
+#mText7 {
+	color: #000;
 	overflow:hidden;
 	position:absolute;
-	left:210px;
-	top:910px;
-	height:140px;
-	width:1500px;
-	font-size:55px;
+	left:20px;
+	top:30px;
+	height:40px;
+	width:300px;
+	font-size:25px;
 	font-family: 'SansationBold';
-	text-align:center;
-	text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
+	text-align:left;
+}
+
+#mText7b {
+	color: #000;
+	overflow:hidden;
+	position:absolute;
+	left:20px;
+	top:66px;
+	height:410px;
+	width:290px;
+	font-size:25px;
+	font-family: 'SansationBold';
+	text-align: left;
 }

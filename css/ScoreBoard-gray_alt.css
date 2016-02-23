@@ -22,6 +22,10 @@
 
 }
 
+html { 
+    overflow: hidden; 
+}
+
 body {
 	margin:0px;
 	background-color: rgba(0, 0, 0, 0);
@@ -31,35 +35,83 @@ body {
 
 #board {
 	position:absolute;
-	top:0px;
-	left:-500px;
+	top:-200px;
+	left:0px;
 	width:500px;
-	height:500px;
-	background-image:url(../images/slide.png);
+	height:134px;
+	background-image:url('../images/scoreboard.png');
 }
 
-#mText6 {
+#mText3 {
 	color: #000;
-	overflow:hidden;
-	position:absolute;
-	left:20px;
-	top:25px;
-	height:40px;
-	width:300px;
-	font-size:25px;
-	font-family: 'SansationBold';
-	text-align:left;
-}
-
-#mText6b {
-	color: #000;
-	overflow:hidden;
-	position:absolute;
-	left:20px;
-	top:64px;
-	height:410px;
-	width:290px;
-	font-size:25px;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	width: 410px;
+	font-size: 30px;
 	font-family: 'SansationBold';
 	text-align: left;
+}
+#mText4 {
+	color: #000;
+	position: absolute;
+	left: 430px;
+	top: 35px;
+	width: 50px;
+	font-size: 11px;
+	font-family: 'SansationBold';
+	text-align: center;
+	height: 23px;
+}
+
+#pName1 {
+	color: #000;
+	position: absolute;
+	left: 70px;
+	top: 62px;
+	width: 350px;
+	font-size: 20px;
+	text-align: left;
+}
+
+#pFlag1 {
+	position: absolute;
+	left: 10px;
+	top: 60px;
+}
+
+#pScore1 {
+	color: #000;
+	position: absolute;
+	left: 430px;
+	top: 62px;
+	width: 47px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#pFlag2 {
+	position: absolute;
+	left: 10px;
+	top: 95px;
+}
+
+#pName2 {
+	color: #000;
+	position: absolute;
+	left: 70px;
+	top: 98px;
+	width: 350px;
+	font-size: 20px;
+	text-align: left;
+}
+
+#pScore2 {
+	color: #000;
+	position: absolute;
+	left: 430px;
+	top: 98px;
+	width: 47px;
+	font-size: 20px;
+	text-align: center;
 }

@@ -1,22 +1,21 @@
 <!DOCTYPE StreamControl>
 <items>
- <timestamp>1377519524</timestamp>
- <cTitle1></cTitle1>
- <cTitle2></cTitle2>
- <mText1></mText1>
- <mText2></mText2>
- <mText3></mText3>
- <mText4></mText4>
- <mText5></mText5>
- <mText6>fdfsfds</mText6>
- <mText6b>estest</mText6b>
- <mText7>fgdsdg</mText7>
- <mText7b></mText7b>
- <pCountry1></pCountry1>
- <pCountry2></pCountry2>
- <pName1></pName1>
- <pName2></pName2>
- <pScore1>1</pScore1>
+ <timestamp>1456239503</timestamp>
+ <cTitle1>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</cTitle1>
+ <cTitle2>Test Title</cTitle2>
+ <mText1>Lower Third L1</mText1>
+ <mText2>Lower Third L2</mText2>
+ <mText3>Contest</mText3>
+ <mText4>Round</mText4>
+ <mText5>Lower Third 1L</mText5>
+ <mText6>Slide L Title</mText6>
+ <mText6b>Slide L Text</mText6b>
+ <mText7>Slide R Title</mText7>
+ <mText7b>Slide R Text</mText7b>
+ <pCountry1>DE</pCountry1>
+ <pCountry2>GB</pCountry2>
+ <pName1>Player 1</pName1>
+ <pName2>Player 2</pName2>
+ <pScore1>2</pScore1>
  <pScore2>1</pScore2>
- <game>BF3</game>
 </items>

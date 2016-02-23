@@ -22,6 +22,10 @@
 
 }
 
+html { 
+    overflow: hidden; 
+}
+
 body {
 	margin:0px;
 	background-color: rgba(0, 0, 0, 0);
@@ -32,18 +36,18 @@ body {
 #board {
 	position:absolute;
 	top:0px;
-	left:500px;
+	left:-500px;
 	width:500px;
 	height:500px;
 	background-image:url(../images/slide.png);
 }
 
-#mText7 {
+#mText6 {
 	color: #000;
 	overflow:hidden;
 	position:absolute;
 	left:20px;
-	top:25px;
+	top:30px;
 	height:40px;
 	width:300px;
 	font-size:25px;
@@ -51,12 +55,12 @@ body {
 	text-align:left;
 }
 
-#mText7b {
+#mText6b {
 	color: #000;
 	overflow:hidden;
 	position:absolute;
 	left:20px;
-	top:64px;
+	top:66px;
 	height:410px;
 	width:290px;
 	font-size:25px;

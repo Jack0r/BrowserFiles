@@ -22,6 +22,10 @@
 
 }
 
+html { 
+    overflow: hidden; 
+}
+
 body {
 	margin:0px;
 	background-color: rgba(0, 0, 0, 0);
@@ -31,34 +35,32 @@ body {
 
 #board {
 	position:absolute;
-	top:0px;
+	top:77px;
 	left:0px;
 	width:1280px;
 	height:100px;
-	background-image:url('../images/game2.png');
+	background-image:url('../images/game_invert.png');
 }
 
 #pName1 {
 	position:absolute;
 	left:175px;
-	top:13px;
+	top:77px;
 	width:330px;
 	font-size:20px;
-	color:#000;
 }
 #pName2 {
 	position:absolute;
 	left:775px;
-	top:13px;
+	top:77px;
 	width:330px;
 	font-size:20px;
 	text-align:right;
-	color:#000;
 }
 #pScore1 {
 	position:absolute;
 	left:511px;
-	top:13px;
+	top:77px;
 	width:47px;
 	font-size:20px;
 	text-align:center;
@@ -66,7 +68,7 @@ body {
 #pScore2 {
 	position:absolute;
 	left:722px;
-	top:13px;
+	top:77px;
 	width:47px;
 	font-size:20px;
 	text-align:center;
@@ -75,20 +77,20 @@ body {
 #pFlag1 {
 	position:absolute;
 	left:126px;
-	top:10px;
+	top:72px;
 }
 
 #pFlag2 {
 	position:absolute;
 	left:1112px;
-	top:10px;
+	top:72px;
 }
 
 #mText3 {
-	color: #FFFFFF;
+	color: #333333;
 	position:absolute;
 	left:560px;
-	top:11px;
+	top:89px;
 	width:160px;
 	font-size:11px;
 	font-family: 'SansationBold';
@@ -98,7 +100,7 @@ body {
 	color: #FFFFFF;
 	position:absolute;
 	left:560px;
-	top:33px;
+	top:70px;
 	width:160px;
 	font-size:11px;
 	font-family: 'SansationBold';

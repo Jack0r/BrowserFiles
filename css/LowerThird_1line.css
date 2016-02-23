@@ -22,6 +22,10 @@
 
 }
 
+html { 
+    overflow: hidden; 
+}
+
 body {
 	margin:0px;
 	background-color: rgba(0, 0, 0, 0);
@@ -35,38 +39,21 @@ body {
 	left:-1920px;
 	width:1920px;
 	height:1080px;
-	background-image:url(../images/lt2l.png);
+	background-image:url(../images/lt1l.png);
 }
 
-#mText1 {
-	color: #FFF;
-	position:absolute;
-	left:200px;
-	top:750px;
-	width:1200px;
-	height:130px;
-	font-size:95px;
-	font-family: 'SansationBold';
-	text-align:left;
-	overflow:hidden;
-		text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
-}
-#mText2 {
+#mText5 {
 	color: #FFF;
 	overflow:hidden;
 	position:absolute;
-	left:200px;
-	top:905px;
+	left:210px;
+	top:910px;
 	height:140px;
-	width:1200px;
+	width:1500px;
 	font-size:55px;
 	font-family: 'SansationBold';
-	text-align:right;
-		text-shadow:
+	text-align:center;
+	text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
